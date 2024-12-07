@@ -94,10 +94,10 @@ namespace trading::bazooka {
             return market_.template position_current_profit<Type>(market);
         }
 
-        const market& market() const
-        {
-            return market_;
-        }
+        // const trading::market& market() const
+        // {
+        //    return market_;
+        //}
     };
 }
 

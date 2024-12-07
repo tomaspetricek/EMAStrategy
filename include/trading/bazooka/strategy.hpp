@@ -27,8 +27,8 @@ namespace trading::bazooka {
         indicator exit_indic_;
         std::array<fraction_t, n_levels> entry_levels_;
         std::size_t next_level_{0};
-        static constexpr std::less_equal<> entry_comp_;
-        static constexpr std::greater_equal<> exit_comp_;
+        static constexpr std::less_equal<price_t> entry_comp_{};
+        static constexpr std::greater_equal<price_t> exit_comp_{};
 
         price_t entry_value(index_t level) const
         {
